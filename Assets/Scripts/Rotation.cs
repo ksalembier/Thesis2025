@@ -7,8 +7,8 @@ public class Rotation : MonoBehaviour
     float reference;
     public float rotationDuration = 2.0f;
 
-    private static GameObject day;
-    private static GameObject night;
+    private static GameObject village;
+    private static GameObject city;
     private static GameObject divide;
     private static GameObject player;
 
@@ -16,9 +16,9 @@ public class Rotation : MonoBehaviour
 
     private void Start()
     {
-        day = GameObject.Find("DAY");
-        night = GameObject.Find("NIGHT");
-        divide = GameObject.Find("DIVIDE");
+        village = GameObject.Find("Village");
+        city = GameObject.Find("City");
+        divide = GameObject.Find("Divide");
         player = GameObject.Find("Player");
     }
 
@@ -35,8 +35,8 @@ public class Rotation : MonoBehaviour
 
     private void AddBackgroundAsChildren()
     {
-        day.transform.parent = this.transform;
-        night.transform.parent = this.transform;
+        village.transform.parent = this.transform;
+        city.transform.parent = this.transform;
         divide.transform.parent = this.transform;
     }
 
@@ -59,19 +59,4 @@ public class Rotation : MonoBehaviour
     {
         StartCoroutine(RotateCoroutine(newZValue));
     }
-
-    // private IEnumerator RotateCoroutine(Quaternion startPosition, Quaternion targetPosition, float duration)
-    // {
-    //     float elapsedTime = 0;
-    //     float elapsedPercentage = 0;
-
-    //     while (elapsedPercentage < 1)
-    //     {
-    //         elapsedPercentage = elapsedTime / duration;
-    //         transform.rotation = Quaternion.Lerp(startPosition, targetPosition, elapsedPercentage);
-    //         yield return null;
-    //         elapsedTime += Time.deltaTime;
-    //     }
-    // }
-
 }

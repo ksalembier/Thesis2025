@@ -6,28 +6,28 @@ public class PlayerCollision : MonoBehaviour
 {
     public GameObject rotation;
 
-    private GameObject dayStartMarker;
-    private GameObject nightStartMarker;
+    private GameObject villageStartMarker;
+    private GameObject cityStartMarker;
 
-    public GameObject dayKeySymbol;
-    public GameObject nightKeySymbol;
+    public GameObject villageKeySymbol;
+    public GameObject cityKeySymbol;
 
-    private bool isDay;
-    private bool isNight;
+    private bool isVillage;
+    private bool isCity;
 
-    private bool isHoldingDayKey;
-    private bool isHoldingNightKey;
+    private bool isHoldingVillageKey;
+    private bool isHoldingCityKey;
 
     public GameObject fadeCanvas;
     private CoreLoopController sceneController;
 
     private void Start()
     {
-        dayStartMarker = GameObject.Find("Day Start Marker");
-        nightStartMarker = GameObject.Find("Night Start Marker");
+        villageStartMarker = GameObject.Find("Village Start Marker");
+        cityStartMarker = GameObject.Find("City Start Marker");
         
-        isHoldingDayKey = false;
-        isHoldingNightKey = false;
+        isHoldingVillageKey = false;
+        isHoldingCityKey = false;
 
         sceneController = fadeCanvas.GetComponent<CoreLoopController>();
     }
@@ -47,39 +47,39 @@ public class PlayerCollision : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // obstacle collisions
-        if (collision.gameObject.tag == "Day Portal") // day portal in the night world
-        {
-            StartCoroutine(RotateCoroutine(0f, false));
-        }
-        if (collision.gameObject.tag == "Night Portal") // night portal in a day world
+        if (collision.gameObject.tag == "Village Obstacle") // rotates player to city
         {
             StartCoroutine(RotateCoroutine(180f, true));
         }
+        if (collision.gameObject.tag == "City Obstacle") // rotates player to village
+        {
+            StartCoroutine(RotateCoroutine(0f, false));
+        }
 
         // key and door collisions
-        if (collision.gameObject.tag == "Day Key") // collected in night world, used in day world
+        if (collision.gameObject.tag == "Village Key") // collected in city, used in village
         {
             collision.gameObject.SetActive(false);
-            dayKeySymbol.SetActive(true);
-            isHoldingDayKey =  true;
+            villageKeySymbol.SetActive(true);
+            isHoldingVillageKey =  true;
         }
-        if (collision.gameObject.tag == "Night Key") // collected in day world, used in night world
+        if (collision.gameObject.tag == "City Key") // collected in village, used in city 
         {
             collision.gameObject.SetActive(false);
-            nightKeySymbol.SetActive(true);
-            isHoldingNightKey =  true;
+            cityKeySymbol.SetActive(true);
+            isHoldingCityKey =  true;
         }
-        if (collision.gameObject.tag == "Day Door" && isHoldingDayKey)
+        if (collision.gameObject.tag == "Village Door" && isHoldingVillageKey)
         {
             collision.gameObject.SetActive(false); // or maybe just remove collider
-            dayKeySymbol.SetActive(false);
-            isHoldingDayKey = false;
+            villageKeySymbol.SetActive(false);
+            isHoldingVillageKey = false;
         }
-        if (collision.gameObject.tag == "Night Door" && isHoldingNightKey)
+        if (collision.gameObject.tag == "City Door" && isHoldingCityKey)
         {
             collision.gameObject.SetActive(false); // or maybe just remove collider
-            nightKeySymbol.SetActive(false);
-            isHoldingNightKey = false;
+            cityKeySymbol.SetActive(false);
+            isHoldingCityKey = false;
         }
     }
 
@@ -91,14 +91,14 @@ public class PlayerCollision : MonoBehaviour
         }
     }
 
-    private IEnumerator RotateCoroutine(float newZValue, bool isDay)
+    private IEnumerator RotateCoroutine(float newZValue, bool isVillage)
     {
         MakeIncorporeal();
         rotation.GetComponent<Rotation>().Rotate(newZValue);
         yield return new WaitForSeconds(2.5f);
         float newStartX;
-        if (isDay) { newStartX = nightStartMarker.transform.position.x; }
-        else { newStartX = dayStartMarker.transform.position.x; }
+        if (isVillage) { newStartX = cityStartMarker.transform.position.x; }
+        else { newStartX = villageStartMarker.transform.position.x; }
         //StartCoroutine(MoveToStartCoroutine(transform.position, new Vector2(newStartX, transform.position.y), 1.0f));
         StartCoroutine(MoveToStartCoroutine(transform.position, new Vector2(newStartX, 3.0f), 1.0f));
         yield return new WaitForSeconds(2.0f);

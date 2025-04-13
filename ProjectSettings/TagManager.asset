@@ -11,6 +11,12 @@ TagManager:
   - Day Key
   - Night Key
   - Game End
+  - Village Obstacle
+  - City Obstacle
+  - Village Door
+  - City Door
+  - Village Key
+  - 'City Key '
   layers:
   - Default
   - TransparentFX
@@ -50,6 +56,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 2725009983
+    locked: 0
+  - name: Platforms
+    uniqueID: 117431927
     locked: 0
   - name: Obstacles
     uniqueID: 1632702609
