@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d6a8fcc913f31be4cb0a7fe425336cc3
+guid: d06a9c46966b4bd4597de0221c77e610
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: Cottages_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 484
+        width: 404
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1bbee02133261749b82d4e6b27a82bb
+      internalID: -1987611935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cottages_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 460
+        width: 486
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874eded397baa274eae844cf98dc4da6
+      internalID: -1435934994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Cottages_2
       rect:
         serializedVersion: 2
-        x: 544
-        y: 341
-        width: 418
-        height: 210
+        x: 484
+        y: 39
+        width: 751
+        height: 396
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bd685cf2eb49c748b897472bc36ce8e
-      internalID: -967643147
+      spriteID: 71fe906225b3cd64fbc68a0ce1ee1897
+      internalID: -717400116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cottages_3
+      name: Cottages_5
       rect:
         serializedVersion: 2
-        x: 4489
-        y: 79
-        width: 768
-        height: 405
+        x: 28
+        y: 22
+        width: 404
+        height: 321
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,50 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cba8aafe564bd254ea1a675521dde92c
-      internalID: 468262189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cottages_16
-      rect:
-        serializedVersion: 2
-        x: 349
-        y: 4
-        width: 502
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a1177be2cc67234280bd0661a435508
-      internalID: 2111863584
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cottages_17
-      rect:
-        serializedVersion: 2
-        x: 1399
-        y: 0
-        width: 420
-        height: 326
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b9a4a24b4fe07a42905fd158ee996d6
-      internalID: 524797000
+      spriteID: 463f78d0747866a4d8d0fa704b641d80
+      internalID: 1501881158
       vertices: []
       indices: 
       edges: []
@@ -204,31 +204,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cottages_0: 1577454790
-      Cottages_1: 1490795714
-      Cottages_10: -2018687265
-      Cottages_11: 1226173670
-      Cottages_12: -790126499
-      Cottages_13: -193905237
-      Cottages_14: -1035880069
-      Cottages_15: -1728024456
-      Cottages_16: 2111863584
-      Cottages_17: 524797000
-      Cottages_18: -1088186389
-      Cottages_19: 1978807088
-      Cottages_2: -967643147
-      Cottages_20: -490532432
-      Cottages_21: -252858798
-      Cottages_22: -1975728847
-      Cottages_23: -2059598823
-      Cottages_24: 1785061330
-      Cottages_3: 468262189
-      Cottages_4: 422853530
-      Cottages_5: 1568367283
-      Cottages_6: 572517660
-      Cottages_7: 281612993
-      Cottages_8: 1710376388
-      Cottages_9: 1883552319
+      Cottages_0: -1987611935
+      Cottages_1: -1435934994
+      Cottages_10: -1318705710
+      Cottages_2: -717400116
+      Cottages_3: 597515421
+      Cottages_4: -231537084
+      Cottages_5: 1501881158
+      Cottages_6: 256865614
+      Cottages_7: 149276836
+      Cottages_8: -1270324815
+      Cottages_9: 699066227
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

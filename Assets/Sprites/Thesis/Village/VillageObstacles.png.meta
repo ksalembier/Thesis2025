@@ -1,0 +1,615 @@
+fileFormatVersion: 2
+guid: df4ba5ebee15a654b96162e6284867bb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VillageObstacles_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 768
+        width: 145
+        height: 167
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00aee4b075fbc5c4dbbc219c542da647
+      internalID: -209667301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_3
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 771
+        width: 98
+        height: 157
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb5d8b67831f494ab2b974c2f01f736
+      internalID: -1039988794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_4
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 798
+        width: 124
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3219963925ba0b24098b3a2c26dc91a5
+      internalID: -1387787025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_5
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 250
+        width: 64
+        height: 710
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff297b1ec4269c14cb8874a1cb95101e
+      internalID: 1770066687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_6
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 205
+        width: 64
+        height: 755
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fcc798d43585ec48a24e8fa0643c302
+      internalID: -63410632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_7
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 270
+        width: 64
+        height: 690
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b2f1f73e9d4f747b470293d2861bac
+      internalID: 1775407899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_9
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 616
+        width: 139
+        height: 136
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b57da2ba16d3e24abd950ed7e57350f
+      internalID: 60867999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_12
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 619
+        width: 81
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5a9d548685fd040a52384980ce4e37
+      internalID: 469951279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_13
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 647
+        width: 115
+        height: 88
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffac8505254fa15458aa02ce70ae63b0
+      internalID: 1563976847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_17
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 491
+        width: 134
+        height: 103
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea5432ffdd29e84b930d4f121e91f58
+      internalID: 2107606280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_20
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 493
+        width: 74
+        height: 97
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a725a686caf2fc44b904b2861a95dfa
+      internalID: -1588227023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_21
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 521
+        width: 115
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7a615b576cdbd4ca183a61b1115b67
+      internalID: -402419178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_26
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 380
+        width: 130
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e51cfc53f9e0754d938a7d693423c93
+      internalID: -775121938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_29
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 382
+        width: 71
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d935633a94be14e83bd17b302df73a
+      internalID: 1248254778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_31
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 409
+        width: 115
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7e6bfef45b6f041868fe1877d816da
+      internalID: -151682232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_36
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 284
+        width: 125
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01efc6c0e77ac4c4d994f1ce99333b49
+      internalID: -925654826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_39
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 287
+        width: 66
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8124a5058ec872a4db942d77ab19b9ee
+      internalID: -728447885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_43
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 314
+        width: 114
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04ece4629a18c043afee5eb5d7ce08a
+      internalID: -908734140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_44
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 11
+        width: 67
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f375f312264cc0548850a33322297add
+      internalID: 946859571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_45
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 11
+        width: 69
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3991c1a70db2f4fb17d939f5621ba8
+      internalID: 87961985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillageObstacles_46
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 78
+        width: 60
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717ab954745f9d7468c2bc9fdd77e263
+      internalID: -79586577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      VillageObstacles_0: -209667301
+      VillageObstacles_1: 626153733
+      VillageObstacles_10: -123906164
+      VillageObstacles_11: -177439221
+      VillageObstacles_12: 469951279
+      VillageObstacles_13: 1563976847
+      VillageObstacles_14: 2982003
+      VillageObstacles_15: -1386162941
+      VillageObstacles_16: -1619770686
+      VillageObstacles_17: 2107606280
+      VillageObstacles_18: -1190299377
+      VillageObstacles_19: -1620538288
+      VillageObstacles_2: 843855207
+      VillageObstacles_20: -1588227023
+      VillageObstacles_21: -402419178
+      VillageObstacles_22: 1319778021
+      VillageObstacles_23: -446522272
+      VillageObstacles_24: 465831879
+      VillageObstacles_25: -1441215910
+      VillageObstacles_26: -775121938
+      VillageObstacles_27: 861043435
+      VillageObstacles_28: 875378779
+      VillageObstacles_29: 1248254778
+      VillageObstacles_3: -1039988794
+      VillageObstacles_30: -1843894118
+      VillageObstacles_31: -151682232
+      VillageObstacles_32: 338698631
+      VillageObstacles_33: 75937303
+      VillageObstacles_34: -180999612
+      VillageObstacles_35: -858133037
+      VillageObstacles_36: -925654826
+      VillageObstacles_37: 2145806445
+      VillageObstacles_38: -1713678426
+      VillageObstacles_39: -728447885
+      VillageObstacles_4: -1387787025
+      VillageObstacles_40: -262027155
+      VillageObstacles_41: -218270646
+      VillageObstacles_42: 570049109
+      VillageObstacles_43: -908734140
+      VillageObstacles_44: 946859571
+      VillageObstacles_45: 87961985
+      VillageObstacles_46: -79586577
+      VillageObstacles_5: 1770066687
+      VillageObstacles_6: -63410632
+      VillageObstacles_7: 1775407899
+      VillageObstacles_8: -1496919649
+      VillageObstacles_9: 60867999
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
