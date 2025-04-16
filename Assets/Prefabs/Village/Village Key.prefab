@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5103971003587029207}
   - component: {fileID: 2159192794219057049}
   - component: {fileID: 7828264363985481189}
+  - component: {fileID: 4256167768489048841}
   m_Layer: 0
   m_Name: Village Key
   m_TagString: Village Key
@@ -28,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.59, y: -1.42, z: 0.023911951}
-  m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 0.19999999}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -120,3 +121,16 @@ CircleCollider2D:
   m_Offset: {x: 0.1733594, y: 0.026003838}
   serializedVersion: 2
   m_Radius: 1.3044581
+--- !u!114 &4256167768489048841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7458459665170587353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca000fb3c6ec0c4db50a3b775fb38c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1

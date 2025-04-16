@@ -110,132 +110,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VillageDoorKeys_0
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 411
-        width: 83
-        height: 121
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: edb798e3996a5814e9d52ddae758c091
-      internalID: -1057389801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: VillageDoorKeys_1
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 408
-        width: 82
-        height: 127
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3003cb7977c49449bdee37966ba77ad
-      internalID: -1866460445
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: VillageDoorKeys_2
-      rect:
-        serializedVersion: 2
-        x: 245
-        y: 411
-        width: 78
-        height: 121
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d8cf209bcdf90147a1703941bed2e27
-      internalID: 1975328276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: VillageDoorKeys_3
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 237
-        width: 103
-        height: 142
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 905c993c1022dab4296d6124d52bc176
-      internalID: -1184272605
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: VillageDoorKeys_4
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 237
-        width: 103
-        height: 148
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd1fcbc5bf54e0546a5b5e69d1469545
-      internalID: 1923153175
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: VillageDoorKeys_5
-      rect:
-        serializedVersion: 2
-        x: 234
-        y: 237
-        width: 99
-        height: 142
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08c8c910399c718429b673a3d747fab5
-      internalID: -1391711652
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: VillageDoorKeys_6
       rect:
         serializedVersion: 2
@@ -244,7 +118,7 @@ TextureImporter:
         width: 74
         height: 154
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,7 +139,7 @@ TextureImporter:
         width: 75
         height: 171
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

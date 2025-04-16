@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4146594292286443301}
   m_Layer: 0
   m_Name: Upper Trunk 2
-  m_TagString: Untagged
+  m_TagString: Village Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1632702609
-  m_SortingLayer: 3
+  m_SortingLayerID: 117431927
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -63410632, guid: df4ba5ebee15a654b96162e6284867bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 7309941246685625655}
   m_Layer: 0
   m_Name: Lower Trunk 2
-  m_TagString: Untagged
+  m_TagString: Village Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -224,8 +224,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1632702609
-  m_SortingLayer: 3
+  m_SortingLayerID: 117431927
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 87961985, guid: df4ba5ebee15a654b96162e6284867bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 3102727064127933912}
   m_Layer: 0
   m_Name: Trunk Parent 2
-  m_TagString: Village Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

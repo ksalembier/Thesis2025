@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndController : MonoBehaviour
 {
@@ -18,8 +19,20 @@ public class EndController : MonoBehaviour
         yield return sceneFade.FadeInCoroutine(sceneFadeDuration);
     }
 
+    public void LoadScene()
+    {
+        StartCoroutine(StartSceneFade());
+        StartCoroutine(LoadNextScene());
+    }
+
     private IEnumerator StartSceneFade()
     {
         yield return sceneFade.FadeOutCoroutine(sceneFadeDuration);
+    }
+
+    private IEnumerator LoadNextScene()
+    {
+        yield return new WaitForSeconds(sceneFadeDuration);
+        SceneManager.LoadScene("StartScreen");
     }
 }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3169020657250805102}
   - component: {fileID: 909111281511114345}
   - component: {fileID: 3187240156873060021}
+  - component: {fileID: 1300813651342911373}
   m_Layer: 0
   m_Name: City Key
   m_TagString: 'City Key '
@@ -28,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 25.079998, y: 2.49, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1632702609
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: eacb1301be380ad4f8329d321aca5298, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -120,3 +121,16 @@ CircleCollider2D:
   m_Offset: {x: 0.15126526, y: 0.088238314}
   serializedVersion: 2
   m_Radius: 0.897422
+--- !u!114 &1300813651342911373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7633753076179724145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca000fb3c6ec0c4db50a3b775fb38c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0

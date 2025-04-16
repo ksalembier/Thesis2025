@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: quest objects sheet_0
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 3590
+        width: 1477
+        height: 1223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e56d4142254e545bd30a68b1d98a7b
+      internalID: -1752213554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quest objects sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1959
+        y: 3519
+        width: 1082
+        height: 1294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475b4aec4ca92374ea378d28fd305d09
+      internalID: 1686710889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quest objects sheet_2
+      rect:
+        serializedVersion: 2
+        x: 3431
+        y: 3597
+        width: 1277
+        height: 1177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb7b02b4c7e98a479e3575b6814ea2c
+      internalID: 1686421236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quest objects sheet_4
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 234
+        width: 1926
+        height: 1663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64548916dee85d48b4f02f257034730
+      internalID: 1180539885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quest objects sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1355
+        width: 1699
+        height: 1909
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cc59b8e8e0e10488010dc9e641e24f
+      internalID: 988821564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quest objects sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 401
+        width: 1844
+        height: 1701
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7a5f617180a0c4fab34e2b33961fd7
+      internalID: -1509153241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +245,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      quest objects sheet_0: -1752213554
+      quest objects sheet_1: 1686710889
+      quest objects sheet_2: 1686421236
+      quest objects sheet_3: -1310739535
+      quest objects sheet_4: 1180539885
+      quest objects sheet_5: 988821564
+      quest objects sheet_6: -1509153241
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

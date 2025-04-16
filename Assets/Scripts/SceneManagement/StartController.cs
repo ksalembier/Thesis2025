@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class StartController : MonoBehaviour
 {
-   [SerializeField]
+    [SerializeField]
     private float sceneFadeDuration;
     private SceneFade sceneFade;
 
@@ -14,13 +14,15 @@ public class StartController : MonoBehaviour
         sceneFade = GetComponentInChildren<SceneFade>();
     }
 
-    void Update()
+    private IEnumerator Start()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            StartCoroutine(StartSceneFade());
-            StartCoroutine(LoadNextScene());
-        }
+        yield return sceneFade.FadeInCoroutine(sceneFadeDuration);
+    }
+
+    public void LoadScene()
+    {
+        StartCoroutine(StartSceneFade());
+        StartCoroutine(LoadNextScene());
     }
 
     private IEnumerator StartSceneFade()
@@ -31,6 +33,6 @@ public class StartController : MonoBehaviour
     private IEnumerator LoadNextScene()
     {
         yield return new WaitForSeconds(sceneFadeDuration);
-        SceneManager.LoadScene("Vacillate");
+        SceneManager.LoadScene("Level1");
     }
 }

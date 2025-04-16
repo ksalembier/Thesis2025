@@ -118,7 +118,7 @@ TextureImporter:
         width: 174
         height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,7 +139,7 @@ TextureImporter:
         width: 41
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -158,9 +158,9 @@ TextureImporter:
         x: 17
         y: 13
         width: 168
-        height: 207
+        height: 214
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,6 +168,90 @@ TextureImporter:
       bones: []
       spriteID: 448b022aef33a9042b0aaa2e2a3a6152
       internalID: -858115246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City Decor_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 14
+        width: 289
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eee5e98a1b298c4e8c69f357131be98
+      internalID: -1784166349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City Decor_1
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 14
+        width: 131
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5127d5908639f8245be4dba850203de9
+      internalID: 70971256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City Decor_5
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 14
+        width: 124
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7b916b4ed80304ea6dc2fd6ac7f5af
+      internalID: 1431483295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City Decor_6
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 14
+        width: 70
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8313e247088cc4f860befe01cad779
+      internalID: 1922526443
       vertices: []
       indices: 
       edges: []
@@ -189,6 +273,7 @@ TextureImporter:
       City Decor_3: 1058054880
       City Decor_4: -858115246
       City Decor_5: 1431483295
+      City Decor_6: 1922526443
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

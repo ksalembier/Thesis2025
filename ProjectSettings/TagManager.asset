@@ -4,18 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Day Portal
-  - Night Portal
-  - Day Door
-  - Night Door
-  - Day Key
-  - Night Key
   - Game End
   - Village Obstacle
   - City Obstacle
   - Village Door
   - City Door
   - Village Key
+  - City Key
   - 'City Key '
   layers:
   - Default

@@ -9,8 +9,7 @@ public class PlayerCollision : MonoBehaviour
     private GameObject villageStartMarker;
     private GameObject cityStartMarker;
 
-    public GameObject villageKeySymbol;
-    public GameObject cityKeySymbol;
+    public GameObject keySymbol;
 
     private bool isVillage;
     private bool isCity;
@@ -46,6 +45,8 @@ public class PlayerCollision : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log(collision.gameObject.tag);
+
         // obstacle collisions
         if (collision.gameObject.tag == "Village Obstacle") // rotates player to city
         {
@@ -59,26 +60,30 @@ public class PlayerCollision : MonoBehaviour
         // key and door collisions
         if (collision.gameObject.tag == "Village Key") // collected in city, used in village
         {
+            int index = collision.gameObject.GetComponent<Key>().GetIndex();
             collision.gameObject.SetActive(false);
-            villageKeySymbol.SetActive(true);
+            keySymbol.GetComponent<KeySymbol>().ChangeSymbol(index);
+            keySymbol.GetComponent<KeySymbol>().SetSymbolActive();
             isHoldingVillageKey =  true;
         }
         if (collision.gameObject.tag == "City Key") // collected in village, used in city 
         {
+            int index = collision.gameObject.GetComponent<Key>().GetIndex();
             collision.gameObject.SetActive(false);
-            cityKeySymbol.SetActive(true);
+            keySymbol.GetComponent<KeySymbol>().ChangeSymbol(index);
+            keySymbol.GetComponent<KeySymbol>().SetSymbolActive();
             isHoldingCityKey =  true;
         }
         if (collision.gameObject.tag == "Village Door" && isHoldingVillageKey)
         {
             collision.gameObject.SetActive(false); // or maybe just remove collider
-            villageKeySymbol.SetActive(false);
+            keySymbol.GetComponent<KeySymbol>().SetSymbolInactive();
             isHoldingVillageKey = false;
         }
         if (collision.gameObject.tag == "City Door" && isHoldingCityKey)
         {
             collision.gameObject.SetActive(false); // or maybe just remove collider
-            cityKeySymbol.SetActive(false);
+            keySymbol.GetComponent<KeySymbol>().SetSymbolInactive();
             isHoldingCityKey = false;
         }
     }
