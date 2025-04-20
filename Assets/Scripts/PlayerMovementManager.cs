@@ -11,7 +11,7 @@ public class PlayerMovementManager : ScriptableObject
    [Range(0.25f, 50f)] public float GroundAcceleration = 5f;
    [Range(0.25f, 50f)] public float GroundDeceleration = 20f;
    [Range(0.25f, 50f)] public float AirAcceleration = 5f;
-   [Range(0.25f, 50f)] public float AirDeceleration = 20f;
+   [Range(0.25f, 50f)] public float AirDeceleration = 5f;
 
    [Header("Run")]
    [Range(1f, 100f)] public float MaxRunSpeed = 20f;
@@ -61,18 +61,18 @@ public class PlayerMovementManager : ScriptableObject
 
    private void OnValidate()
    {
-        CalculateValues();
+     CalculateValues();
    }
 
    private void OnEnable()
    {
-        CalculateValues();
+     CalculateValues();
    }
 
    private void CalculateValues()
    {
-        AdjustedJumpHeight = JumpHeight * JumpHeightCompensationFactor;
-        Gravity = -(2f * AdjustedJumpHeight) / Mathf.Pow(TimeTillJumpApex, 2f);
-        InitialJumpVelocity = Mathf.Abs(Gravity) * TimeTillJumpApex;
+     AdjustedJumpHeight = JumpHeight * JumpHeightCompensationFactor;
+     Gravity = -(2f * AdjustedJumpHeight) / Mathf.Pow(TimeTillJumpApex, 2f);
+     InitialJumpVelocity = Mathf.Abs(Gravity) * TimeTillJumpApex;
    }
 }

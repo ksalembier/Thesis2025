@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4475351134953048493}
   - component: {fileID: 8749007986409655247}
   - component: {fileID: 1001264097313702228}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CityPlatforms_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

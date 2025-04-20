@@ -45,8 +45,6 @@ public class PlayerCollision : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(collision.gameObject.tag);
-
         // obstacle collisions
         if (collision.gameObject.tag == "Village Obstacle") // rotates player to city
         {

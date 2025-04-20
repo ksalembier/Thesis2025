@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7841096491295718569}
   - component: {fileID: 1810575036812075980}
   - component: {fileID: 5888098499976306568}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Village Platforms_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}

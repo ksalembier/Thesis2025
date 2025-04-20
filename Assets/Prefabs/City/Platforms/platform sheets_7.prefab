@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 3881813172037050261}
   - component: {fileID: 5645541861092607184}
   - component: {fileID: 671822628848091742}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: platform sheets_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}

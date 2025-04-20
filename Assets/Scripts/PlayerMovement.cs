@@ -6,7 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("References")]
     public PlayerMovementManager moveManager;
-    [SerializeField] private Collider2D playerCollider;
+    [SerializeField] private Collider2D feetCollider;
+    [SerializeField] private Collider2D bodyCollider;
     private Rigidbody2D rb;
 
     // movemenet variables
@@ -39,7 +40,6 @@ public class PlayerMovement : MonoBehaviour
 
     // jump coyoted time variables
     private float coyoteTimer;
-
 
     private void Awake()
     {
@@ -137,7 +137,8 @@ public class PlayerMovement : MonoBehaviour
                     fastFallTime = moveManager.TimeForUpwardCancel;
                     VerticalVelocity = 0f;
                 }
-                else{
+                else
+                {
                     isFastFalling = true;
                     fastFallReleaseSpeed = VerticalVelocity;
                 }
@@ -155,14 +156,16 @@ public class PlayerMovement : MonoBehaviour
                 fastFallReleaseSpeed =  VerticalVelocity;
             }
         }
+
         // double jump 
-        else if (jumpBufferTimer > 0f && isJumping && numberOfJumpsUsed < moveManager.NumberOfJumpsAllowed)
+        else if (jumpBufferTimer > 0f && isJumping && numberOfJumpsUsed < moveManager.NumberOfJumpsAllowed - 1)
         {
             isFastFalling = false;
             InitiateJump(1);
         }
+
         // air jump after coyote time elapsed
-        else if (jumpBufferTimer > 0f && isFalling && numberOfJumpsUsed < moveManager.NumberOfJumpsAllowed - 1)
+        else if (jumpBufferTimer > 0f && isFalling && numberOfJumpsUsed < moveManager.NumberOfJumpsAllowed)
         {
            InitiateJump(2);
            isFastFalling = false; 
@@ -272,8 +275,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void IsGrounded()
     {
-        Vector2 boxCastOrigin = new Vector2(playerCollider.bounds.center.x, playerCollider.bounds.min.y);
-        Vector2 boxCastSize = new Vector2(playerCollider.bounds.size.x, moveManager.GroundDetectionRayLength);
+        Vector2 boxCastOrigin = new Vector2(feetCollider.bounds.center.x, feetCollider.bounds.min.y);
+        Vector2 boxCastSize = new Vector2(feetCollider.bounds.size.x, moveManager.GroundDetectionRayLength);
 
         groundHit = Physics2D.BoxCast(boxCastOrigin, boxCastSize, 0f, Vector2.down, moveManager.GroundDetectionRayLength, moveManager.GroundLayer);
 
@@ -295,8 +298,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void BumpedHead()
     {
-        Vector2 boxCastOrigin = new Vector2(playerCollider.bounds.center.x, playerCollider.bounds.max.y);
-        Vector2 boxCastSize = new Vector2(playerCollider.bounds.size.x * moveManager.HeadWidth, moveManager.HeadDetectionRayLength);
+        Vector2 boxCastOrigin = new Vector2(feetCollider.bounds.center.x, bodyCollider.bounds.max.y);
+        Vector2 boxCastSize = new Vector2(feetCollider.bounds.size.x * moveManager.HeadWidth, moveManager.HeadDetectionRayLength);
 
         headHit = Physics2D.BoxCast(boxCastOrigin, boxCastSize, 0f, Vector2.up, moveManager.HeadDetectionRayLength, moveManager.GroundLayer);
         if (headHit.collider != null) { bumpedHead = true; }
@@ -321,6 +324,7 @@ public class PlayerMovement : MonoBehaviour
     private void CollisionChecks()
     {
         IsGrounded();
+        BumpedHead();
     }
 
     #endregion
@@ -338,9 +342,65 @@ public class PlayerMovement : MonoBehaviour
 
     #region Draw Debuggers
 
-    private void DrawJumpArc(float moveSpeed, Color gizmoColor)
+    private void DrawJumpArc(float moveSpeed, Color gizmosColor)
     {
+        Vector2 startPosition = new Vector2(feetCollider.bounds.center.x, feetCollider.bounds.min.y);
+        Vector2 previousPosition = startPosition;
+        float speed = 0f;
         
+        if (moveManager.DrawRight) { speed = moveSpeed; }
+        else { speed = -moveSpeed; }
+        Vector2 velocity = new Vector2(speed, moveManager.InitialJumpVelocity);
+
+        Gizmos.color = gizmosColor;
+
+        float timeStep = 2 * moveManager.TimeTillJumpApex / moveManager.ArcResolution;
+
+        for (int i = 0; i < moveManager.VisualizationSteps; i++)
+        {
+            float simulationTime = i * timeStep;
+            Vector2 displacement;
+            Vector2 drawPoint;
+
+            if (simulationTime < moveManager.TimeTillJumpApex)
+            {
+                displacement = velocity * simulationTime + 0.5f * new Vector2(0, moveManager.Gravity) * simulationTime * simulationTime;
+            }
+            else if (simulationTime < moveManager.TimeTillJumpApex + moveManager.ApexHangTime)
+            {
+                float apexTime = simulationTime - moveManager.TimeTillJumpApex;
+                displacement = velocity * moveManager.TimeTillJumpApex + 0.5f * new Vector2(0, moveManager.Gravity) * moveManager.TimeTillJumpApex * moveManager.TimeTillJumpApex;
+                displacement += new Vector2(speed, 0) * apexTime;
+            }
+            else 
+            {   
+                float descendTime = simulationTime - (moveManager.TimeTillJumpApex + moveManager.ApexHangTime);
+                displacement = velocity * moveManager.TimeTillJumpApex + 0.5f * new Vector2(0, moveManager.Gravity) * moveManager.TimeTillJumpApex * moveManager.TimeTillJumpApex;
+                displacement += new Vector2(speed, 0) * moveManager.ApexHangTime;
+                displacement += new Vector2(speed, 0) * descendTime + 0.5f * new Vector2(0, moveManager.Gravity) * descendTime * descendTime;
+            }
+
+            drawPoint = startPosition + displacement;
+
+            if (moveManager.StopOnCollision)
+            {
+                RaycastHit2D hit = Physics2D.Raycast(previousPosition, drawPoint - previousPosition, Vector2.Distance(previousPosition, drawPoint), moveManager.GroundLayer);
+                if (hit.collider != null)
+                {
+                    Gizmos.DrawLine(previousPosition, hit.point);
+                    break;
+                }
+            }
+
+            Gizmos.DrawLine(previousPosition, drawPoint);
+            previousPosition = drawPoint;
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (moveManager.ShowWalkJumpArc) { DrawJumpArc(moveManager.MaxWalkSpeed, Color.white); }
+        if (moveManager.ShowRunJumpArc) { DrawJumpArc(moveManager.MaxRunSpeed, Color.red); }
     }
 
     #endregion
