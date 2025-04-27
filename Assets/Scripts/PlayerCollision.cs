@@ -48,13 +48,14 @@ public class PlayerCollision : MonoBehaviour
         // obstacle collisions
         if (collision.gameObject.tag == "Village Obstacle") // rotates player to city
         {
-            StartCoroutine(RotateCoroutine(180f, true));
+            //StartCoroutine(RotateCoroutine(180f, true));
+            StartCoroutine(MoveToStartCoroutine(transform.position, new Vector2(villageStartMarker.transform.position.x, 3.0f), 1.0f));
         }
         if (collision.gameObject.tag == "City Obstacle") // rotates player to village
         {
-            StartCoroutine(RotateCoroutine(0f, false));
+            //StartCoroutine(RotateCoroutine(0f, false));
+            StartCoroutine(MoveToStartCoroutine(transform.position, new Vector2(cityStartMarker.transform.position.x, 3.0f), 1.0f));
         }
-
         // key and door collisions
         if (collision.gameObject.tag == "Village Key") // collected in city, used in village
         {
@@ -94,6 +95,18 @@ public class PlayerCollision : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Village Portal" && Input.GetKeyDown(KeyCode.F))
+        {
+            StartCoroutine(RotateCoroutine(180f, true)); // rotates player to city 
+        }
+        if (collision.gameObject.tag == "City Portal" && Input.GetKeyDown(KeyCode.F))
+        {
+            StartCoroutine(RotateCoroutine(0f, false)); // rotates player to village
+        }
+    }
+
     private IEnumerator RotateCoroutine(float newZValue, bool isVillage)
     {
         MakeIncorporeal();
@@ -102,7 +115,6 @@ public class PlayerCollision : MonoBehaviour
         float newStartX;
         if (isVillage) { newStartX = cityStartMarker.transform.position.x; }
         else { newStartX = villageStartMarker.transform.position.x; }
-        //StartCoroutine(MoveToStartCoroutine(transform.position, new Vector2(newStartX, transform.position.y), 1.0f));
         StartCoroutine(MoveToStartCoroutine(transform.position, new Vector2(newStartX, 3.0f), 1.0f));
         yield return new WaitForSeconds(2.0f);
         MakeCorporeal();

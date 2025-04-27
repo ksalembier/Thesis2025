@@ -38,7 +38,7 @@ public class PlayerMovementManager : ScriptableObject
    [Range(0.01f, 1f)] public float ApexHangTime = 0.075f;
 
    [Header("Jump Buffer")]
-   [Range(0.5f, 1f)] public float JumpBufferTime = 0.125f;
+   [Range(0f, 1f)] public float JumpBufferTime = 0.125f;
 
    [Header("Jump Coyote Time")]
    [Range(0f, 1f)] public float JumpCoyoteTime = 0.1f;

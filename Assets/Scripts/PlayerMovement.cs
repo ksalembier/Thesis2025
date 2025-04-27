@@ -112,7 +112,8 @@ public class PlayerMovement : MonoBehaviour
     #region Jump
 
     private void JumpChecks()
-    {
+    {      
+
         // on button press
         if (InputManager.jumpWasPressed)
         {
@@ -185,12 +186,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void InitiateJump(int numberOfJumpsUsed)
+    private void InitiateJump(int jumpsUsed)
     {
         if (!isJumping) { isJumping = true; }
 
         jumpBufferTimer = 0f;
-        numberOfJumpsUsed += numberOfJumpsUsed;
+        numberOfJumpsUsed += jumpsUsed;
         VerticalVelocity = moveManager.InitialJumpVelocity;
     }
 

@@ -11,7 +11,8 @@ TagManager:
   - City Door
   - Village Key
   - City Key
-  - 'City Key '
+  - Village Portal
+  - City Portal
   layers:
   - Default
   - TransparentFX
