@@ -16,7 +16,7 @@ MonoBehaviour:
   GroundAcceleration: 4
   GroundDeceleration: 20
   AirAcceleration: 5
-  AirDeceleration: 20
+  AirDeceleration: 5
   MaxRunSpeed: 20
   GroundLayer:
     serializedVersion: 2
@@ -24,7 +24,7 @@ MonoBehaviour:
   GroundDetectionRayLength: 0.02
   HeadDetectionRayLength: 0.02
   HeadWidth: 0.75
-  JumpHeight: 2
+  JumpHeight: 2.5
   JumpHeightCompensationFactor: 1.054
   TimeTillJumpApex: 0.35
   GravityOnReleaseMultiplier: 2
@@ -33,13 +33,13 @@ MonoBehaviour:
   TimeForUpwardCancel: 0.027
   ApexThreshold: 0.97
   ApexHangTime: 0.075
-  JumpBufferTime: 0.5
+  JumpBufferTime: 0.43
   JumpCoyoteTime: 0.1
   DebugShowIsGroundedBox: 0
   DebugShowHeadBumpBox: 0
-  ShowWalkJumpArc: 0
-  ShowRunJumpArc: 0
-  StopOnCollision: 0
-  DrawRight: 0
+  ShowWalkJumpArc: 1
+  ShowRunJumpArc: 1
+  StopOnCollision: 1
+  DrawRight: 1
   ArcResolution: 20
   VisualizationSteps: 90

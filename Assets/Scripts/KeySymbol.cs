@@ -18,13 +18,9 @@ public class KeySymbol : MonoBehaviour
         return currentKeyIndex;
     }
 
-    public void SetSymbolActive()
+    public void SetSymbolActive(bool isActive)
     {
-        this.gameObject.SetActive(true);
+        this.gameObject.SetActive(isActive);
     }
 
-    public void SetSymbolInactive()
-    {
-        this.gameObject.SetActive(false);
-    }
 }
