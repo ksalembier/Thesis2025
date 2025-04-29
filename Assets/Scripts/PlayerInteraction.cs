@@ -10,6 +10,7 @@ public class PlayerInteraction : MonoBehaviour
     private GameObject cityStartMarker;
 
     public GameObject keySymbol;
+    public int currentKeyIndex;
 
     private bool isVillage;
 
@@ -75,6 +76,7 @@ public class PlayerInteraction : MonoBehaviour
             collision.gameObject.SetActive(false);
             keySymbol.GetComponent<KeySymbol>().ChangeSymbol(index);
             keySymbol.SetActive(true);
+            currentKeyIndex = index;
 
             if (collision.gameObject.tag == "Village Key") { isHoldingVillageKey = true; }
             else { isHoldingCityKey = true ; }
@@ -102,11 +104,14 @@ public class PlayerInteraction : MonoBehaviour
         if ((collision.gameObject.tag == "Village Door" || collision.gameObject.tag == "City Door") && (isHoldingVillageKey || isHoldingCityKey))
         {
             Door door = collision.gameObject.GetComponentInParent<Door>();
-            door.SetRequestActive(false);
-            door.SetColliderActive(false);
-            keySymbol.SetActive(false);
-            isHoldingVillageKey = false;
-            isHoldingCityKey = false;
+            if (door.GetIndex() == currentKeyIndex)
+            {
+                door.SetRequestActive(false);
+                door.SetColliderActive(false);
+                keySymbol.SetActive(false);
+                isHoldingVillageKey = false;
+                isHoldingCityKey = false;
+            }
         }
     }
 
